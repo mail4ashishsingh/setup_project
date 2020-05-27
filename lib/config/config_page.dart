@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:setupproject/home/home_page.dart';
 
 import 'index.dart';
 import '../utils/utils.dart';
@@ -51,10 +52,7 @@ class _ConfigPageState extends State<ConfigPage> {
                 elevation: 0.0,
               ),
             ),
-            home: Scaffold(
-              appBar: AppBar(),
-              body: Container(),
-            ),
+            home: HomePage(),
           );
         },
       ),
