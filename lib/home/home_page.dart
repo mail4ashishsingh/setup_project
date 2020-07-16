@@ -8,6 +8,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // ignore: close_sinks
     var _homeBloc = HomeBloc();
     return DevScaffold(title: 'Home', body: HomeScreen(homeBloc: _homeBloc));
   }

@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:setupproject/agenda/agenda_page.dart';
+import 'package:setupproject/agenda/session_detail.dart';
+import 'package:setupproject/faq/faq_page.dart';
+import 'package:setupproject/findDevFest/findDevFest_page.dart';
 import 'package:setupproject/home/home_page.dart';
+import 'package:setupproject/speakers/speaker_page.dart';
+import 'package:setupproject/sponsors/sponsor_page.dart';
+import 'package:setupproject/team/team_page.dart';
 
 import 'index.dart';
 import '../utils/utils.dart';
@@ -53,6 +60,16 @@ class _ConfigPageState extends State<ConfigPage> {
               ),
             ),
             home: HomePage(),
+            routes: {
+              HomePage.routeName: (context) => HomePage(),
+              AgendaPage.routeName: (context) => AgendaPage(),
+              SpeakersPage.routeName: (context) => SpeakersPage(),
+//              SessionDetail.routeName: (context) => SessionDetail(),
+              TeamPage.routeName: (context) => TeamPage(),
+              SponsorPage.routeName: (context) => SponsorPage(),
+              FaqPage.routeName: (context) => FaqPage(),
+              FindDevFestPage.routeName: (context) => FindDevFestPage(),
+            },
           );
         },
       ),
