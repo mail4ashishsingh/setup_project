@@ -8,9 +8,10 @@ class Utils {
   static const String app_color = "#ffd7167";
   static Color primaryAppColor = Colors.white;
   static Color secondaryAppColor = Colors.black;
-  static const String google_san_family = "GoogleSans";
+  static const String google_sans_family = "GoogleSans";
   static bool isDebug = false;
 
   //* Preferences
   static SharedPreferences prefs;
+  static const String darkModePref = "darkModePref";
 }
