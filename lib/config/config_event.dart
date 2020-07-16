@@ -32,7 +32,7 @@ class DarkModeEvent extends ConfigEvent {
   }
 }
 
-class LocalConfigEvent extends ConfigEvent {
+class LoadConfigEvent extends ConfigEvent {
   @override
   List<Object> get props => ["LocalConfigEvent"];
 
